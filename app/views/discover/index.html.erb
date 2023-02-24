@@ -1,0 +1,20 @@
+<%= form_with url: discover_index_path, local: true, method: :get do |form| %>
+  <%= form.label :search, 'Find recipes by listing your ingredients seperated by a comma' %>
+  <%= form.text_field :search %>
+  <%= form.submit 'Find Recipes' %>
+<% end %>
+
+<% if @results %>
+  <h4>Results: <%= @results.count %></h4>
+  <% @results.each do |result| %>
+    <div id=<%= result.id %> >
+    <p>Name: <%= result.name %></p>
+    <img src=<%= result.img %> style="width:150px;height:150;">
+    <p><%= result.missing_ingr_count %> missing ingredients: </p>
+      <% result.missing_ingr.each do |ingr| %>
+        <p> <%= ingr[:amount] %> <%= ingr[:unit] %> <%= ingr[:name] %> </p>
+      <% end %>
+    <br>
+    </div>
+  <% end %>
+<% end %>

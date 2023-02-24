@@ -1,0 +1,10 @@
+<h3><%= @recipe.title %></h3>
+<%= image_tag "#{@recipe.image}" %>
+<h5>Time to cook: <%= @recipe.ready_in_minutes %></h5>
+
+<h5>Ingredients: </h5>
+<% @recipe.extended_ingredients.each do |ingredient| %>
+    <p><%= ingredient[:name] %> <%= ingredient[:amount] %> <%= ingredient[:unit] %></p>
+<% end %>
+<h5>Instructions: </h5>
+<p><%= @recipe.instructions %></p>
