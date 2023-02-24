@@ -18,7 +18,7 @@ RSpec.describe "Recipe Search" do
   it 'displays the results of recipes based on the inputted ingredients' do
     json_response = File.read('spec/fixtures/ingredient_search_results.json')
 
-    stub_request(:get, "https://babe_whats_for_dinner_be.herokuapp.com/recipes/findByIngredients?ingredients=apples%2Cflour%2Csugar")
+    stub_request(:get, "https://babe-whats-for-dinner-be.herokuapp.com/recipes/findByIngredients?ingredients=apples%2Cflour%2Csugar")
       .to_return(status: 200, body: json_response, headers: {})
 
 
