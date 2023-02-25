@@ -3,12 +3,12 @@ class Recipe
 
   def initialize(data)
     @id = data[:id]
-    @title = data[:title]
-    @ready_in_minutes = data[:readyInMinutes]
-    @image = data[:image]
-    @summary = data[:summary]
-    @instructions = data[:instructions]
-    @extended_ingredients = Recipe.extended_ingredients(data[:extendedIngredients])
+    @title = data[:attributes][:title]
+    @ready_in_minutes = data[:attributes][:readyInMinutes]
+    @image = data[:attributes][:image]
+    @summary = data[:attributes][:summary]
+    @instructions = data[:attributes][:instructions]
+    @extended_ingredients = Recipe.extended_ingredients(data[:attributes][:ingredients])
   end
 
   def self.extended_ingredients(data)

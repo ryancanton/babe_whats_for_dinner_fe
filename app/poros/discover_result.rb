@@ -8,10 +8,10 @@ class DiscoverResult
 
   def initialize(data)
     @id = data[:id]
-    @img = data[:image]
-    @name = data[:title]
-    @missing_ingr = DiscoverResult.missing_ingredients(data[:missedIngredients])
-    @missing_ingr_count = data[:missedIngredientCount]
+    @img = data[:attributes][:image]
+    @name = data[:attributes][:name]
+    @missing_ingr = DiscoverResult.missing_ingredients(data[:attributes][:missing_ingr])
+    @missing_ingr_count = data[:attributes][:missing_ingr_count]
   end
 
   def self.missing_ingredients(data)
