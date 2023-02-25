@@ -3,8 +3,14 @@ require 'rails_helper'
 RSpec.describe 'show' do
     it 'shows the details of a specific recipe' do
         json_response = File.read('spec/fixtures/recipe_details.json')
-    stub_request(:get, 'https://babe-whats-for-dinner-be.herokuapp.com/recipes/479101/information')
-      .to_return(status: 200, body: json_response, headers: {})
+        stub_request(:get, "http://babe-whats-for-dinner-be.herokuapp.com/api/v1/recipes/479101/information").
+        with(headers: 
+                {
+                    'Accept'=>'*/*',
+                    'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+                    'User-Agent'=>'Faraday v2.7.4'
+                }
+            ).to_return(status: 200, body: json_response, headers: {})
 
         visit "/discover/479101"
         expect(page).to have_content("On the Job: Pan Roasted Cauliflower From Food52")
