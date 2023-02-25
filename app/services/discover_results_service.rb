@@ -1,6 +1,6 @@
 class DiscoverResultsService
   def self.get_search_results(params)
-    url = "https://babe_whats_for_dinner_be.herokuapp.com/recipes/findByIngredients?ingredients=" + self.parse(params)
+    url = "https://babe-whats-for-dinner-be.herokuapp.com/recipes/findByIngredients?ingredients=" + self.parse(params)
     
     response = Faraday.get(url)
 

@@ -76,10 +76,10 @@ test:
 # You can use this database configuration with:
 #
 #   production:
-#     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
   <<: *default
   database: babe_whats_for_dinner_fe_production
+  url: <%= ENV['DATABASE_URL'] %>
   username: babe_whats_for_dinner_fe
   password: <%= ENV['BABE_WHATS_FOR_DINNER_FE_DATABASE_PASSWORD'] %>

@@ -1,8 +1,8 @@
 class SessionsController < ApplicationController 
   def create
-    client_id = f52797da1ca750c9f089
-    client_secret = 226cd6ab93811f1ccabae4a1d9f9aa005140c1e1
-    
+    client_id = "f52797da1ca750c9f089"
+    client_secret = "226cd6ab93811f1ccabae4a1d9f9aa005140c1e1"
+    # require 'pry'; binding.pry
     code = params[:code]
 
     conn = Faraday.new(url: 'https://github.com', headers: {'Accept': 'application/json'})
@@ -16,8 +16,6 @@ class SessionsController < ApplicationController
     data = JSON.parse(response.body, symbolize_names: true)
     access_token = data[:access_token]
 
-    # note we're hitting a different domain, api.github.com
-    # so we're going to rebuild 'conn'
     conn = Faraday.new(
       url: 'https://api.github.com',
       headers: {
