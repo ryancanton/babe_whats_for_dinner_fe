@@ -10,6 +10,18 @@
   </head>
 
   <body>
+    <nav>
+    <%= link_to "Home", root_path %> 
+      <% if current_user %>
+        <%= link_to "Log Out", logout_path %>
+      <% else %>
+        <%= link_to "Login with Github", "https://github.com/login/oauth/authorize?client_id=#{@client_id}&scope=repo" %>
+      <%end%>
+    </nav>
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, class: name %>
+    <% end %>
+    <h1>Babe, What's for Dinner?</h1>
     <%= yield %>
   </body>
 </html>
