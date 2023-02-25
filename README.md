@@ -6,6 +6,8 @@
   <img width="600" src="https://wp.en.aleteia.org/wp-content/uploads/sites/2/2018/05/web3-mediterranean-food-middle-eastern-food-israeli-dishes-falafel-hummus-pita-bread-shutterstock.jpg?w=640&crop=1">
 </p>
 
+<h3 align="center">This repo handles the Front End project responsibilities. <a href="https://github.com/jlweave/babe_what_for_dinner_be">Click Here</a> to visit our Back End repo
+</h3>
 
 ## Project Overview
 
@@ -21,7 +23,7 @@ Check us out! https://babe-whats-for-dinner-fe.herokuapp.com/discover
 
 From your terminal, run:
 
-```git clone git@github.com:ryancanton/babe_whats_for_dinner.git```
+```git clone git@github.com:ryancanton/babe_whats_for_dinner_fe.git```
 
 ```bundle install```
 
