@@ -1,4 +1,3 @@
-
   <div style="background-color:#7289da;">
   <br>
     <h1 style="color:#FFFFFF;text-align:center;"><%= @recipe.title %></h1>
@@ -31,5 +30,9 @@
     <br>
     <p style="color:#FFFFFF;margin-left:20px;margin-right:20px;"><%= @recipe.instructions %></p>
     <br>
+    
+<%= button_to "Save to My Recipes",
+ "http://babe-whats-for-dinner-be.herokuapp.com/api/v1/user_recipes?uid=#{current_user.uid}&recipe_id=#{@recipe.id}&recipe_name=#{@recipe.title}",
+  method: :post %>
   </div>
 </body>
