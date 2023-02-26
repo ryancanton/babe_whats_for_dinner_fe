@@ -1,7 +1,11 @@
 
-    
-
 <h3>Welcome, <%= current_user.username %></h3>
 
+<% if @recipes %>
+  <p>My Recipes:</p>
+  <% @recipes.each do |recipe| %>
+    <%= link_to recipe.name, "/discover/#{recipe.id}" %>
+  <% end %>
+<% end %>
 
 <%= button_to "Discover Recipes", discover_index_path, method: :get %> 
