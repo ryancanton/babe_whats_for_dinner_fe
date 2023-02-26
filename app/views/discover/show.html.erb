@@ -1,15 +1,38 @@
-<h3><%= @recipe.title %></h3>
-<%= image_tag "#{@recipe.image}" %>
-<h5>Time to cook: <%= @recipe.ready_in_minutes %></h5>
-
-<h5>Ingredients: </h5>
-<% @recipe.extended_ingredients.each do |ingredient| %>
-    <p><%= ingredient[:name] %> <%= ingredient[:amount] %> <%= ingredient[:unit] %></p>
-<% end %>
-<h5>Instructions: </h5>
-<p><%= @recipe.instructions %></p>
-
-
+  <div style="background-color:#7289da;">
+  <br>
+    <h1 style="color:#FFFFFF;text-align:center;"><%= @recipe.title %></h1>
+  <br>
+  </div>
+  <div style="background-color:#1e2124;text-align:center;">
+    <br>
+    <%= image_tag "#{@recipe.image}" %>
+    <h3 style="color:#FFFFFF;">Time to cook: <%= @recipe.ready_in_minutes %></h3>
+    <br>
+  </div>
+  <div style="background-color:#7289da;">
+    <br>
+        <h2 style="color:#FFFFFF;text-align:center;">Ingredients: </h2>
+    <br>
+  </div>
+  <div style="background-color:#1e2124;">
+    <br>
+    <% @recipe.extended_ingredients.each do |ingredient| %>
+        <p style="color:#FFFFFF;margin-left:20px"><%= ingredient[:name].capitalize %> <%= ingredient[:amount] %> <%= ingredient[:unit] %></p>
+    <% end %>
+    <br>
+  </div>
+  <div style="background-color:#7289da;">
+    <br>
+    <h2 style="background-color:#7289da;color:#FFFFFF;text-align:center;">Instructions: </h2>
+    <br>
+  </div>
+  <div style="background-color:#1e2124;">
+    <br>
+    <p style="color:#FFFFFF;margin-left:20px;margin-right:20px;"><%= @recipe.instructions %></p>
+    <br>
+    
 <%= button_to "Save to My Recipes",
  "http://babe-whats-for-dinner-be.herokuapp.com/api/v1/user_recipes?uid=#{current_user.uid}&recipe_id=#{@recipe.id}&recipe_name=#{@recipe.title}",
   method: :post %>
+  </div>
+</body>
