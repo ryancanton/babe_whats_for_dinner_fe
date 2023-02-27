@@ -1,10 +1,10 @@
 
 <h3>Welcome, <%= current_user.username %></h3>
 <p>My Saved Recipes:</p>
-<%= @saved_recipes %>
 <% if @saved_recipes != nil %>
   <% @saved_recipes.each do |recipe| %>
-    <% link_to recipe.@name, "/discover/#{recipe.recipe_id}" %>
+    <%= link_to recipe.name, "/discover/#{recipe.recipe_id}" %>
+ 
   <% end %>
 <% end %>
 
