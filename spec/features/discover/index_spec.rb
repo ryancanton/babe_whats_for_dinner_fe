@@ -7,7 +7,7 @@ RSpec.describe "Recipe Search" do
 
     json_response = File.read('spec/fixtures/ingredient_search_results.json')
 
-    stub_request(:get, "http://babe-whats-for-dinner-be.herokuapp.com/api/v1/recipes/findByIngredients?ingredients=apples,flour,sugar").
+    stub_request(:get, "https://babe-whats-for-dinner-be.herokuapp.com/api/v1/recipes/findByIngredients?ingredients=apples,flour,sugar").
       with(headers: 
             {
               'Accept'=>'*/*',
