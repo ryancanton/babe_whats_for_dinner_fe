@@ -1,0 +1,13 @@
+{
+  "data": [
+    {
+      "id": "22",
+      "type": "user_recipe",
+      "attributes": {
+        "uid": "12345",
+        "recipe_id": "479101",
+        "recipe_name": "On the Job: Pan Roasted Cauliflower From Food52"
+      }
+    }
+  ]
+}
