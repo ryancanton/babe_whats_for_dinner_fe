@@ -1,6 +1,6 @@
 class UserRecipesService
   def self.get_recipes(uid)
-    url = "http://babe-whats-for-dinner-be.herokuapp.com/api/v1/user_recipes?uid=#{uid}"
+    url = "https://babe-whats-for-dinner-be.herokuapp.com/api/v1/user_recipes?uid=#{uid}"
       
       response = Faraday.get(url)
       if response.body != ""
