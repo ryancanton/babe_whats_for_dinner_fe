@@ -1,5 +1,6 @@
 class DiscoverController < ApplicationController
-  # before_action :validate_user, only: [:show, :index]
+
+  before_action :validate_user, only: [:show, :index]
 
   def index
     if params[:search]

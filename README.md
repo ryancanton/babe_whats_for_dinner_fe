@@ -9,6 +9,14 @@
 <h3 align="center">This repo handles the Front End project responsibilities. <a href="https://github.com/jlweave/babe_what_for_dinner_be">Click Here</a> to visit our Back End repo
 </h3>
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Setup and Installation](#setup-and-installation)
+- [Learning Goals](#learning-goals)
+- [API Information](#api-information)
+- [Responsible Parties](#responsible-parties)
+
 ## Project Overview
 
 **_Babe, What's For Dinner?_** is an application that allows users to input ingredients they have on hand to return recipes that include all of those ingredients.
@@ -40,6 +48,11 @@ To run the server on localhost:3000: ```rails s```
 - Build and consume APIs
 - Implement OAuth for user registration
 - Create wireframes and user stories to facilitate programming
+
+## API Information
+We are consuming the <a href= "https://spoonacular.com/food-api">Spoonacular API </a>for this project.
+- <a href= "https://spoonacular.com/food-api/recipes">Recipes Index</a>
+- <a href= "https://spoonacular.com/food-api/recipes/#{query}/information">Recipes Show</a>
 
 ## Responsible Parties
 
