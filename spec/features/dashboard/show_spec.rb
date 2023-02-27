@@ -17,7 +17,7 @@ RSpec.describe 'User Dashboard' do
          to_return(status: 200, body: json_response, headers: {})
 
     visit dashboard_path
-
+    
     expect(page).to have_link('Peanut Butter', href: "/discover/5678")
     expect(page).to have_link('Jelly', href: "/discover/5679")
   end
