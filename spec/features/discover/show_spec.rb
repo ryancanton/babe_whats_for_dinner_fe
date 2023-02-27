@@ -6,7 +6,7 @@ RSpec.describe 'show' do
         allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
         json_response = File.read('spec/fixtures/recipe_details.json')
-        stub_request(:get, "http://babe-whats-for-dinner-be.herokuapp.com/api/v1/recipes/479101/information").
+        stub_request(:get, "https://babe-whats-for-dinner-be.herokuapp.com/api/v1/recipes/479101/information").
         with(headers: 
                 {
                     'Accept'=>'*/*',
