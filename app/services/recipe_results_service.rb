@@ -1,6 +1,6 @@
 class RecipeResultsService
     def self.get_recipe_info(id)
-      url = "http://babe-whats-for-dinner-be.herokuapp.com/api/v1/recipes/#{id}/information"
+      url = "https://babe-whats-for-dinner-be.herokuapp.com/api/v1/recipes/#{id}/information"
       response = Faraday.get(url)
       
       

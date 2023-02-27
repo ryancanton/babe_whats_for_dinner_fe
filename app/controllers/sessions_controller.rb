@@ -1,8 +1,7 @@
 class SessionsController < ApplicationController 
   def create
-    client_id = "f52797da1ca750c9f089"
-    client_secret = "226cd6ab93811f1ccabae4a1d9f9aa005140c1e1"
-    # require 'pry'; binding.pry
+    client_id = ENV[:client_id]
+    client_secret = ENV[:client_secret]
     code = params[:code]
 
     conn = Faraday.new(url: 'https://github.com', headers: {'Accept': 'application/json'})
