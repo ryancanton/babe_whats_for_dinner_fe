@@ -25,7 +25,7 @@ If a user has MOST ingredients on hand, **_Babe, What's For Dinner?_** will retu
 
 When a user creates an account, they are provided their own **_Babe, What's For Dinner?_** dashboard which allows them to save recipes.
 
-Check us out! https://babe-whats-for-dinner-fe.herokuapp.com/discover
+Check us out! https://babe-whats-for-dinner-fe.herokuapp.com
 
 ## Setup and Installation
 
