@@ -40,8 +40,8 @@ RSpec.describe 'show' do
         expect(page).to have_content("On the Job: Pan Roasted Cauliflower From Food52")
         expect(page).to have_css("img[src*='https://spoonacular.com/recipeImages/479101-556x370.jpg']")
         expect(page).to have_content("Time to cook: 20")
-        expect(page).to have_content("Breadcrumbs 0.5 cup")
-        expect(page).to have_content("Sumac 0.5 teaspoon")
+        expect(page).to have_content("0.5 cup breadcrumbs")
+        expect(page).to have_content("0.5 teaspoon sumac")
         expect(page).to have_content("Cut the florets off the stems and and then chop them into tiny florets. You can also chop up the stems into tiny pieces if you want. You should have about 6 cups of chopped cauliflower. In a large skillet heat 2 tablespoons of olive oil over medium-high heat. Add the cauliflower, 1 teaspoon of salt, rosemary, and sumac. Sauté until cauliflower is tender and starts to brown a bit, stirring as necessary, about 15 minutes. You can also add a bit of olive oil if the pan starts to get too dry or the cauliflower is starting to stick. Meanwhile, in a small skillet, toast the pinenuts over medium heat until golden brown. Set aside. Heat the remaining 2 tablespoons of olive oil in the same pan. Once oil is shimmering, toss in the breadcrumbs and stir, toasting the breadcrumbs. Season with a pinch of kosher salt and a few turns of freshly ground black pepper. Remove from the heat and toss in half of the chopped parsley. When cauliflower is done, remove from the heat and season to taste with freshly ground black pepper and a pinch or so of salt if necessary. Toss in the toasted pine nuts, the chopped raisins, and the remaining parsley. When ready to serve, sprinkle the top with the toasted breadcrumbs and some pecorino.")
     
         click_button "Save to My Recipes"

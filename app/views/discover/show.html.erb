@@ -16,8 +16,8 @@
   </div>
   <div style="background-color:#1e2124;">
     <br>
-    <% @recipe.extended_ingredients.each do |ingredient| %>
-        <p style="color:#FFFFFF;margin-left:20px"><%= ingredient[:name].capitalize %> <%= ingredient[:amount] %> <%= ingredient[:unit] %></p>
+    <% @recipe.extended_ingredients.each do |ingr| %>
+        <p style="color:#FFFFFF;margin-left:20px"><%= ingr[:amount] %> <%= ingr[:unit] %> <%= ingr[:name] %></p>
     <% end %>
     <br>
   </div>
