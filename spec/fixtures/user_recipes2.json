@@ -1,0 +1,13 @@
+{
+  "data": [
+    {
+      "id": "21",
+      "type": "user_recipe",
+      "attributes": {
+        "uid": "12345",
+        "recipe_id": "5679",
+        "recipe_name": "Jelly"
+      }
+    }
+  ]
+}
