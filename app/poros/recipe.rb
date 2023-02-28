@@ -10,17 +10,6 @@ class Recipe
     @summary = data[:attributes][:summary]
     @instructions = data[:attributes][:instructions]
 
-    @extended_ingredients = Recipe.extended_ingredients(data[:attributes][:ingredients])
-    
-  end
-
-  def self.extended_ingredients(data)
-    data.map do |ingr|
-      {
-        name: ingr[:name],
-        amount: ingr[:amount],
-        unit: ingr[:unit]
-      }
-    end
+    @extended_ingredients = data[:attributes][:ingredients]
   end
 end
