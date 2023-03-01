@@ -12,6 +12,7 @@
 ## Table of Contents
 
 - [Project Overview](#project-overview)
+- [Tech Stack](#tech-stack)
 - [Website Navigation](#website-navigation)
 - [Setup and Installation](#setup-and-installation)
 - [Learning Goals](#learning-goals)
@@ -28,6 +29,9 @@ If a user has MOST ingredients on hand, **_Babe, What's For Dinner?_** will retu
 When a user creates an account, they are provided their own **_Babe, What's For Dinner?_** dashboard which allows them to save recipes.
 
 Check us out! https://babe-whats-for-dinner-fe.herokuapp.com
+
+## Tech Stack
+![BWFD Tech Stack](https://user-images.githubusercontent.com/109649285/222281020-da5e7bea-b784-41f4-83fa-6e6f8aeb90cf.png)
 
 ## Website Navigation
 <p>
@@ -75,7 +79,6 @@ We are consuming the <a href= "https://spoonacular.com/food-api">Spoonacular API
 <p>
   <img width="250" src="https://user-images.githubusercontent.com/113324661/222260792-fb4e8151-e745-4a57-a7cc-fc347b706b66.jpg">
 </p>
-
 
 ## Responsible Parties
 
