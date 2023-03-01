@@ -27,6 +27,21 @@ When a user creates an account, they are provided their own **_Babe, What's For 
 
 Check us out! https://babe-whats-for-dinner-fe.herokuapp.com
 
+## Website Navigation
+<p>
+  <img width="500" src="https://user-images.githubusercontent.com/113324661/222257221-3a862b16-3713-445c-a202-abb332d9fd0f.jpg">
+  <img width="500" src="https://user-images.githubusercontent.com/113324661/222257763-1026e88d-5cbc-4fa7-9023-df00fe460f41.jpg">
+</p>
+<p>
+  <img width="500" src="https://user-images.githubusercontent.com/113324661/222258470-b69f84d4-d1ef-46a7-84c5-0abaa8fa0377.jpg">
+  <img width="500" src="https://user-images.githubusercontent.com/113324661/222258533-6f00ddb6-6f52-4b2d-ae27-08ab86516246.jpg">
+</p>
+<p>
+  <img width="500" src="https://user-images.githubusercontent.com/113324661/222258600-114ce916-2969-4eb9-8c84-6711fccb22e0.jpg">
+  <img width="500" src="https://user-images.githubusercontent.com/113324661/222258651-d7f14207-076b-4410-9234-d9b8f28bc7e2.jpg">
+</p>
+
+
 ## Setup and Installation
 
 From your terminal, run:
