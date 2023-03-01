@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get '/auth/github/callback', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
   get '/dashboard', to: 'dashboard#show'
-  delete '/user_recipes', to: 'user_recipes#destroy'
+  delete '/user_recipes/:id', to: 'user_recipes#destroy'
 end
