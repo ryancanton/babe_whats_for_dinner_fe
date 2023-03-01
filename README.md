@@ -12,9 +12,11 @@
 ## Table of Contents
 
 - [Project Overview](#project-overview)
+- [Website Navigation](#website-navigation)
 - [Setup and Installation](#setup-and-installation)
 - [Learning Goals](#learning-goals)
-- [API Information](#api-information)
+- [API Information](#api-information) 
+- [Minimum Viable Product Brainstorm](#minimum-viable-product-brainstorm)
 - [Responsible Parties](#responsible-parties)
 
 ## Project Overview
