@@ -1,5 +1,8 @@
 
 <h3>Welcome, <%= current_user.username %></h3>
+
+<%= button_to "Discover Recipes", discover_index_path, method: :get %> 
+<br>
 <p>My Saved Recipes:</p>
 <% if @saved_recipes != nil %>
   <% @saved_recipes.each do |recipe| %>
@@ -9,5 +12,3 @@
   </div>
   <% end %>
 <% end %>
-
-<%= button_to "Discover Recipes", discover_index_path, method: :get %> 

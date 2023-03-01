@@ -37,7 +37,6 @@ RSpec.describe 'show' do
    
 
         visit "/discover/479101"
-        save_and_open_page
         expect(page).to have_content("On the Job: Pan Roasted Cauliflower From Food52")
         expect(page).to have_css("img[src*='https://spoonacular.com/recipeImages/479101-556x370.jpg']")
         expect(page).to have_content("Time to cook: 20")
