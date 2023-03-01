@@ -1,14 +1,15 @@
 
-<h3>Welcome, <%= current_user.username %></h3>
+<h2>Welcome, <%= current_user.username %></h2>
 
 <%= button_to "Discover Recipes", discover_index_path, method: :get %> 
 <br>
-<p>My Saved Recipes:</p>
+<h3>My Saved Recipes:</h3>
 <% if @saved_recipes != nil %>
   <% @saved_recipes.each do |recipe| %>
   <div id=<%= recipe.recipe_id %>>
-    <%= link_to recipe.name, "/discover/#{recipe.recipe_id}" %><br>
+  <h4><%= link_to recipe.name, "/discover/#{recipe.recipe_id}" %></h4>
   <%= button_to "Delete Recipe", "/user_recipes?uid=#{current_user.uid}&recipe_id=#{recipe.recipe_id}", method: :delete, local: true %>
+  <br>
   </div>
   <% end %>
 <% end %>
