@@ -5,7 +5,7 @@
   <% @saved_recipes.each do |recipe| %>
   <div id=<%= recipe.recipe_id %>>
     <%= link_to recipe.name, "/discover/#{recipe.recipe_id}" %><br>
-  <%= button_to "Delete Recipe", "/user_recipes?uid=#{current_user.uid}&recipe_id=#{recipe.recipe_id}", method: :delete %>
+  <%= button_to "Delete Recipe", "/user_recipes?uid=#{current_user.uid}&recipe_id=#{recipe.recipe_id}", method: :delete, local: true %>
   </div>
   <% end %>
 <% end %>
