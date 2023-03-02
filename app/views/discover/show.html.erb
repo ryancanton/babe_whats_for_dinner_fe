@@ -31,7 +31,7 @@
     <p style="color:#FFFFFF;margin-left:20px;margin-right:20px;"><%= @recipe.instructions %></p>
     <br>
     <div style="text-align:center">
-      <%= button_to "Save to My Recipes", "/user_recipes?uid=#{current_user.uid}&recipe_id=#{@recipe.id}&recipe_name=#{@recipe.title}", method: :post, :style=>'color:#FFFFFF;background-color:#7289da;font-family:gill sans;padding: 10px 25px', :class => "css_class" %>
+      <%= button_to "Save to My Recipes", "/user_recipes?uid=#{current_user.uid}&recipe_id=#{@recipe.id}&recipe_name=#{@recipe.title}", method: :post, local: true, :style=>'color:#FFFFFF;background-color:#7289da;font-family:gill sans;padding: 10px 25px', :class => "css_class" %>
       <br>
       <%= button_to "Search New Recipe", discover_index_path, method: :get, :style=>'color:#FFFFFF;background-color:#7289da;font-family:gill sans;padding: 10px 25px', :class => "css_class" %>
       <br>
