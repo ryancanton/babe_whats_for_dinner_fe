@@ -1,13 +1,16 @@
 
-<h3>Welcome, <%= current_user.username %></h3>
-<p>My Saved Recipes:</p>
+<h2>Welcome, <%= current_user.username %></h2>
+
+<%= button_to "Discover Recipes", discover_index_path, method: :get, :style=>'color:#FFFFFF;background-color:#7289da;font-family:gill sans;', :class => "css_class" %> 
+<br>
+<h3>My Saved Recipes:</h3>
 <% if @saved_recipes != nil %>
   <% @saved_recipes.each do |recipe| %>
   <div id=<%= recipe.recipe_id %>>
-    <%= link_to recipe.name, "/discover/#{recipe.recipe_id}" %><br>
-  <%= button_to "Delete Recipe", "/user_recipes?uid=#{current_user.uid}&recipe_id=#{recipe.recipe_id}", method: :delete, local: true %>
+  
+  <div style="float: left; width: auto;"><%= button_to "Delete Recipe", "/user_recipes?uid=#{current_user.uid}&recipe_id=#{recipe.recipe_id}", method: :delete, local: true, :style=>'color:#FFFFFF;background-color:#7289da;font-family:gill sans;', :class => "css_class" %></div>
+  <h4>&nbsp; &nbsp<%= link_to recipe.name, "/discover/#{recipe.recipe_id}" %>
+  <br></h4>
   </div>
   <% end %>
 <% end %>
-
-<%= button_to "Discover Recipes", discover_index_path, method: :get %> 
