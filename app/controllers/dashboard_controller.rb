@@ -3,6 +3,7 @@ class DashboardController < ApplicationController
 
   def show
     @saved_recipes = UserRecipesFacade.get_recipes(current_user.uid)
+  
   end
   
 end
