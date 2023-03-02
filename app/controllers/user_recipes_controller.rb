@@ -2,7 +2,7 @@ class UserRecipesController < ApplicationController
   def create
     Faraday.post("https://babe-whats-for-dinner-be.herokuapp.com/api/v1/user_recipes?uid=#{params[:uid]}&recipe_id=#{params[:recipe_id]}&recipe_name=#{params[:recipe_name]}")
 
-    if response.status == 422
+    if response.status == 422 || "422"
       flash[:errors] = "You already have this recipe saved"
       redirect_to discover_path(params[:recipe_id])
     else
