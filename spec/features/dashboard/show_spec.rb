@@ -17,7 +17,7 @@ RSpec.describe 'User Dashboard' do
     end
   it 'contains a list of a users saved recipes that are links to the recipes show page' do
     visit dashboard_path
-
+    
     expect(page).to have_link('Peanut Butter', href: "/discover/5678")
     expect(page).to have_link('Jelly', href: "/discover/5679")
   end
