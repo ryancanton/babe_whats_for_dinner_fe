@@ -35,16 +35,16 @@ Check us out! https://babe-whats-for-dinner-fe.herokuapp.com
 
 ## Website Navigation
 <p>
-  <img width="500" src="https://user-images.githubusercontent.com/113324661/222257221-3a862b16-3713-445c-a202-abb332d9fd0f.jpg">
-  <img width="500" src="https://user-images.githubusercontent.com/113324661/222257763-1026e88d-5cbc-4fa7-9023-df00fe460f41.jpg">
+  <img width="500" src="https://user-images.githubusercontent.com/113324661/222539803-66abe859-91dc-410c-a5d3-874d1e2e0f3a.png">
+  <img width="500" src="https://user-images.githubusercontent.com/113324661/222539870-4385b55b-a226-4102-973e-90175d94f260.png">
 </p>
 <p>
-  <img width="500" src="https://user-images.githubusercontent.com/113324661/222258470-b69f84d4-d1ef-46a7-84c5-0abaa8fa0377.jpg">
-  <img width="500" src="https://user-images.githubusercontent.com/113324661/222258533-6f00ddb6-6f52-4b2d-ae27-08ab86516246.jpg">
+  <img width="500" src="https://user-images.githubusercontent.com/113324661/222539952-19851190-d858-41ac-935a-f9f41a7571dd.png">
+  <img width="500" src="https://user-images.githubusercontent.com/113324661/222540061-ac2ffb1e-f119-4dab-bcb9-cfcdc6d2d034.png">
 </p>
 <p>
-  <img width="500" src="https://user-images.githubusercontent.com/113324661/222258600-114ce916-2969-4eb9-8c84-6711fccb22e0.jpg">
-  <img width="500" src="https://user-images.githubusercontent.com/113324661/222258651-d7f14207-076b-4410-9234-d9b8f28bc7e2.jpg">
+  <img width="500" src="https://user-images.githubusercontent.com/113324661/222540118-1ac18b28-7976-4fc0-bf2f-a3d5793f5cfc.png">
+  <img width="500" src="https://user-images.githubusercontent.com/113324661/222540184-3ce2e8d6-0df4-4f7c-b08a-ffdd1987758e.png">
 </p>
 
 
