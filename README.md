@@ -34,15 +34,15 @@ Check us out! https://babe-whats-for-dinner-fe.herokuapp.com
 ![BWFD Tech Stack](https://user-images.githubusercontent.com/109649285/222281020-da5e7bea-b784-41f4-83fa-6e6f8aeb90cf.png)
 
 ## Website Navigation
-<p>
+<p align="center">
   <img width="450" src="https://user-images.githubusercontent.com/113324661/222539803-66abe859-91dc-410c-a5d3-874d1e2e0f3a.png">
   <img width="450" src="https://user-images.githubusercontent.com/113324661/222539870-4385b55b-a226-4102-973e-90175d94f260.png">
 </p>
-<p>
+<p align="center">
   <img width="450" src="https://user-images.githubusercontent.com/113324661/222539952-19851190-d858-41ac-935a-f9f41a7571dd.png">
   <img width="450" src="https://user-images.githubusercontent.com/113324661/222540061-ac2ffb1e-f119-4dab-bcb9-cfcdc6d2d034.png">
 </p>
-<p>
+<p align="center">
   <img width="450" src="https://user-images.githubusercontent.com/113324661/222540118-1ac18b28-7976-4fc0-bf2f-a3d5793f5cfc.png">
   <img width="450" src="https://user-images.githubusercontent.com/113324661/222540184-3ce2e8d6-0df4-4f7c-b08a-ffdd1987758e.png">
 </p>
