@@ -24,7 +24,7 @@
 
 **_Babe, What's For Dinner?_** is an application that allows users to input ingredients they have on hand to return recipes that include all of those ingredients.
 
-If a user has MOST ingredients on hand, **_Babe, What's For Dinner?_** will return other recipes ordered by the number of missing ingredients, indicate which ingredients are missing, and the cost of those ingredients from Kroger / King Soopers.
+If a user has MOST ingredients on hand, **_Babe, What's For Dinner?_** will return other recipes ordered by the number of missing ingredients, and indicate which ingredients are missing.
 
 When a user creates an account, they are provided their own **_Babe, What's For Dinner?_** dashboard which allows them to save recipes.
 
